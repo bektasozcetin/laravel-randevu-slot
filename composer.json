@@ -1,0 +1,44 @@
+{
+    "name": "bektasozcetin/laravel-randevu-slot",
+    "description": "Randevu müsaitlik motoru: çalışma saatleri, molalar, izin ve tatil günleri, kapasite, çakışma kontrolü ve müsait gün haritası.",
+    "keywords": ["laravel", "appointment", "booking", "availability", "slots", "scheduling", "randevu"],
+    "homepage": "https://github.com/bektasozcetin/laravel-randevu-slot",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bektaş Özçetin",
+            "homepage": "https://github.com/bektasozcetin"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/collections": "^11.0|^12.0",
+        "nesbot/carbon": "^2.72|^3.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.18",
+        "pestphp/pest": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bektasozcetin\\RandevuSlot\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bektasozcetin\\RandevuSlot\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
